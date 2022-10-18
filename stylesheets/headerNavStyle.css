@@ -27,6 +27,10 @@
     display: none;
 }
 
+#navbar {
+    z-index: 0;
+}
+
 #navbar-content {
     width: 100%;
     list-style: none;
@@ -36,8 +40,8 @@
 }
 
 #navbar-content li {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #navbar-content a {
@@ -56,6 +60,24 @@ link effect source:
 #navbar a:hover {
     border-bottom-color: black;
 }
+
+/* socials */
+#socials {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#socials a {
+    border-bottom: 1px solid #FFDC9D;
+    text-decoration: none;
+    color: black;
+}
+
+#socials a:hover {
+    border-bottom-color: black;
+}
+
+/**************************** resizing ****************************/
 
 @media (max-width:770px) {
     .header-nav-container {
@@ -111,7 +133,6 @@ link effect source:
         z-index: 1;
         background-color: #FFDC9D;
         overflow-x: hidden;
-        transition: 0.5s;
     }
 
     #navbar-content {
