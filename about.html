@@ -14,18 +14,19 @@
 </head>
 
 <body>
-    <!-- HEADER AND NAVIGATION -->
     <div class="header-nav-container">
         <!-- HEADER -->
         <div id="header">
             <h1>
                 <a href="index.html"><img src="images/small_point_logo.png" alt="small point cafe logo"></a>
             </h1>
+            <div id="menu-nav" onclick="openNav()">&#9776;</div>
         </div>
 
         <!-- NAVBAR -->
         <div id="navbar">
-            <ul>
+            <div id="closebtn" onclick="closeNav()">&times;</div>
+            <ul id="navbar-content">
                 <li>
                     <a href="index.html">HOME</a>
                 </li>
@@ -52,4 +53,31 @@
     </div>
 
     <!-- ACTUALY BODY -->
+    <div class="body-container">
+        <!-- image -->
+        <div class="page-img">
+            <img src="images/home_slideshow/cafe_sign.png" alt="outside coffee and cafe sign image" draggable="false">
+        </div>
+
+        <!-- about section content -->
+        <div class="page-content">
+            <h2>ABOUT</h2>
+            <p>
+                Small Point Café started with the place. In 2010, founders Adam and Anne fell in love with
+                the light, the brick walls, and the concrete floors. They envisioned a café that values
+                community, sustainability, good food and good people.
+            </p>
+            <p>
+                We want Small Point to be mutually beneficial to our family, staff, suppliers, and to you,
+                our customers. We want to demonstrate, through our efforts and successes, that conservation,
+                composting, recycling, care, and quality, contribute to a more sustainable world and better
+                communities.
+            </p>
+            <p>
+                We hope you enjoy and have fun!
+            </p>
+        </div>
+    </div>
+
+    <script src="nav_bar.js"></script>
 </body>
