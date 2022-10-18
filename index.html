@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Small Point Cafe</title>
+    <link rel="shortcut icon" type="images/png" href="images/browser_icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="stylesheets/home_style.css">
+    <link rel="stylesheet" href="stylesheets/headerNavStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-nav-container">
+        <!-- HEADER -->
+        <div id="header">
+            <h1>
+                <a href="index.html"><img src="images/small_point_logo.png" alt="small point cafe logo"></a>
+            </h1>
+            <div id="menu-nav" onclick="openNav()">&#9776;</div>
+        </div>
+
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <div id="closebtn" onclick="closeNav()">&times;</div>
+            <ul id="navbar-content">
+                <li>
+                    <a href="index.html" style="border-bottom-color:black">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="menu.html">MENU</a>
+                </li>
+                <li>
+                    <a href="https://order.snackpass.co/Small-Point-Cafe-5f9c67a382fa6b00be975074">STUDENT SNACKPASS</a>
+                </li>
+                <li>
+                    <a href="https://squareup.com/gift/CCXTRC873QCB1/order">GIFT CARDS</a>
+                </li>
+                <li>
+                    <a href="hiring.html">HIRING</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <!-- SLIDESHOW -->
+        <div class="slideshow">
+            <!-- images -->
+            <div class="slides fade">
+                <img src="images/home_slideshow/breakfast.png" alt="small point breakfast image" draggable="false">
+            </div>
+
+            <div class="slides fade">
+                <img src="images/home_slideshow/coffee.png" alt="coffee latte art image" draggable="false">
+            </div>
+
+            <div class="slides fade">
+                <img src="images/home_slideshow/bagel.png" alt="small point bagel image" draggable="false">
+            </div>
+
+            <div class="slides fade">
+                <img src="images/home_slideshow/sandwich.png" alt="small point sandwich image" draggable="false">
+            </div>
+
+            <div class="slides fade">
+                <img src="images/home_slideshow/cafe_sign.png" alt="outside coffee and cafe sign image"
+                    draggable="false">
+            </div>
+
+            <div class="slides fade">
+                <img src="images/home_slideshow/inside_cafe.jpeg" alt="inside small point cafe image" draggable="false">
+            </div>
+
+            <!-- next and previous buttons -->
+            <div class="arrows">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+    <script src="slideshow.js"></script>
+    <script src="nav_bar.js"></script>
+</body>
