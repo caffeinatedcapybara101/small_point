@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Small Point Cafe</title>
+    <link rel="shortcut icon" type="images/png" href="images/browser_icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="stylesheets/about_style.css">
+    <link rel="stylesheet" href="stylesheets/headerNavStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-nav-container">
+        <!-- HEADER -->
+        <div id="header">
+            <h1>
+                <a href="index.html"><img src="images/small_point_logo.png" alt="small point cafe logo"></a>
+            </h1>
+            <div id="menu-nav" onclick="openNav()">&#9776;</div>
+        </div>
+
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <div id="closebtn" onclick="closeNav()">&times;</div>
+            <ul id="navbar-content">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="menu.html">MENU</a>
+                </li>
+                <li>
+                    <a href="https://order.snackpass.co/Small-Point-Cafe-5f9c67a382fa6b00be975074">STUDENT SNACKPASS</a>
+                </li>
+                <li>
+                    <a href="https://squareup.com/gift/CCXTRC873QCB1/order">GIFT CARDS</a>
+                </li>
+                <li>
+                    <a href="hiring.html" style="border-bottom-color:black">HIRING</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ACTUALY BODY -->
+    <div class="body-container">
+        <!-- image -->
+        <div class="page-img">
+            <img src="images/hiring.jpg" alt="employee hiring image" draggable="false">
+        </div>
+
+        <!-- about section content -->
+        <div class="page-content">
+            <h2>HIRING</h2>
+            <p>
+                The Small Point Cafe crew is awesome.
+            </p>
+            <p>
+                Are you super friendly upbeat person, positive, outgoing, dare I say... perky?!
+                We are always looking for a solid team players.
+                Do you like to help people have a good experience? Love coffee? Good Food?
+            </p>
+            <p>
+                We hope you enjoy and have fun!
+            </p>
+            <p>
+                Send us a Resume
+                <a href="mailto:smallpointcafe@gmail.com?subject=Apply%20to%20Join%20Us">here</a>.
+            </p>
+        </div>
+    </div>
+
+    <script src="nav_bar.js"></script>
+</body>
