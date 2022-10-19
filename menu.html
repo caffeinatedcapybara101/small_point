@@ -6,13 +6,72 @@
     <link rel="shortcut icon" type="images/png" href="images/browser_icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale=1">
-    <link rel="stylesheet" href="stylesheets/about_style.css">
-    <link rel="stylesheet" href="stylesheets/headerNavStyle.css">
+    <link rel="stylesheet" href="stylesheets/page_style.css">
+    <link rel="stylesheet" href="stylesheets/header_nav_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    I did not have it in me to make this page :)
+    <div class="header-nav-container">
+        <!-- HEADER -->
+        <div id="header">
+            <h1>
+                <a href="index.html"><img src="images/small_point_logo.png" alt="small point cafe logo"></a>
+            </h1>
+            <div id="menu-nav" onclick="openNav()">&#9776;</div>
+        </div>
+
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <div id="closebtn" onclick="closeNav()">&times;</div>
+            <ul id="navbar-content">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="menu.html" style="border-bottom-color:black">MENU</a>
+                </li>
+                <li>
+                    <a href="https://order.snackpass.co/Small-Point-Cafe-5f9c67a382fa6b00be975074">STUDENT SNACKPASS</a>
+                </li>
+                <li>
+                    <a href="https://squareup.com/gift/CCXTRC873QCB1/order">GIFT CARDS</a>
+                </li>
+                <li>
+                    <a href="hiring.html">HIRING</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+
+            <!-- SOCIAL MEDIA LINKS -->
+            <div id="socials">
+                <a href="https://www.facebook.com/smallpointcafe/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/smallpointcafe/" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACTUALY BODY -->
+    <div class="body-container">
+        <!-- image -->
+        <div class="page-img">
+            <img src="images/capybara.jpeg" alt="inside small point cafe image" draggable="false">
+        </div>
+
+        <div class="page-content">
+            <p>
+                i did not have it in me to do this page, so here is a capybara instead :)
+            </p>
+        </div>
+    </div>
+
+    <script src="nav_bar.js"></script>
 </body>
